@@ -1,0 +1,8 @@
+services:
+  form_bronze_bot:
+    build: .
+    env_file:
+      - .env
+    volumes:
+      - ./data:/data
+    restart: always
